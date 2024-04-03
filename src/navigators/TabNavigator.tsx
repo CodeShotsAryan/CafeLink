@@ -7,8 +7,7 @@ import HomeScreen from '../screens/HomeScreen';
 import FavoritesScreen from '../screens/FavoritesScreen';
 import CartScreen from '../screens/CartScreen';
 import OrderHistoryScreen from '../screens/OrderHistoryScreen';
-import CustomIcons from '../components/CustomIcons';
-
+import CustomIcon from '../components/CustomIcon';
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
@@ -32,7 +31,7 @@ const TabNavigator = () => {
         component={HomeScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
-            <CustomIcons
+            <CustomIcon
               name="home"
               size={25}
               color={
@@ -46,7 +45,7 @@ const TabNavigator = () => {
         component={CartScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
-            <CustomIcons
+            <CustomIcon
               name="cart"
               size={25}
               color={
@@ -60,7 +59,7 @@ const TabNavigator = () => {
         component={FavoritesScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
-            <CustomIcons
+            <CustomIcon
               name="like"
               size={25}
               color={
@@ -74,7 +73,7 @@ const TabNavigator = () => {
         component={OrderHistoryScreen}
         options={{
           tabBarIcon: ({focused, color, size}) => (
-            <CustomIcons
+            <CustomIcon
               name="bell"
               size={25}
               color={
